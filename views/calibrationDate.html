@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    
+
+
+
+
+    
+   
+      <div class="container">
+        <h1>Calibration Form</h1>
+        <form class="row g-3" action="/api/calibration" method="post">
+            <div class="col-md-6">
+              <label for="inputemail" class="form-label">Email ID of Authority</label>
+              <input type="email" class="form-control" id="inputemail" name="email">
+            </div>
+            <div class="col-md-6">
+              <label for="inputInstrument" class="form-label">Name Of Instrument</label>
+              <input type="text" class="form-control" id="inputInstrument" name="instrument">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputInstrumentNumber" class="form-label">Instrument Number</label>
+                <input type="text" class="form-control" id="inputInstrumentNumber" name="instrumentnumber">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCalibrationFrequncy" class="form-label">Calibration Frequancy (In Month)</label>
+                <input type="text" class="form-control" id="inputCalibrationFrequncy" name="calibrationFrequancy">
+              </div>
+              <div class="col-12">
+                <label for="inputCalibratedDate" class="form-label">Last Calibrated Date</label>
+                <input type="date" class="form-control" id="inputCalibratedDate" name="lastcalibrateDate">
+              </div>
+
+            <div class="col-12">
+              <label for="inputNextCalibratedDate" class="form-label">Next Calibrated Date</label>
+              <input type="date" class="form-control" id="inputNextCalibratedDate" placeholder="" name="nextCalibratedDate">
+            </div>
+               
+            <div class="col-md-6">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+    
+    
+    
+    
+    
+      </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+
+
+  </body>
+</html>
